@@ -36,6 +36,10 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/wild/(?'
+                    .'|serie(?:/([a-z0-9-]+))?(*:201)'
+                    .'|film(?:/([a-z0-9-]+))?(*:231)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -45,8 +49,10 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        201 => [[['_route' => 'wild_serie', 'carotte' => 'Aucune série sélectionnée, veuillez choisir une série', '_controller' => 'App\\Controller\\WildController::serie'], ['carotte'], null, null, false, true, null]],
+        231 => [
+            [['_route' => 'wild_film', 'navet' => 'Aucune film sélectionné, veuillez choisir un film', '_controller' => 'App\\Controller\\WildController::film'], ['navet'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

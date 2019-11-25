@@ -77,20 +77,13 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>Wild Séries</li>
-            <li class=\"fellow\"><a href=\"#\">Séries</a></li>
-            <li><a href=\"#\">Films</a></li>
-            <li><a href=\"#\">Nous contacter</a></li>
-        </ul>
-    </nav>
+    
     <section>
         <h2 class=\"fellow\">Hello Wilders !<br><span></h2>
     </section>
     <section class=\"mushroom\">
-        <article class=\"photo\"><a href=\"#\"></a>Séries</article>
-        <article class=\"photo\"><a href=\"#\"></a>Films</article>
+        <article class=\"photo\"><a href=\"series.html.twig\"></a>Séries</article>
+        <article class=\"photo\"><a href=\"films.html.twig\"></a>Films</article>
         <article class=\"photo\"><a href=\"#\"></a>Suggestion du jour</article>
     </section>
 
@@ -99,8 +92,8 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
     <footer>
         <section class=\"ledger\">
             <a class=\"alpha\" href=\"#\">A propos</a>
-            <a class=\"alpha\" href=\"#\">Séries</a>
-            <a class=\"alpha\" href=\"#\">Films</a>
+            <a class=\"alpha\" href=\"series.html.twig\">Séries</a>
+            <a class=\"alpha\" href=\"films.html.twig\">Films</a>
         </section>
         <section class=\"yellow\">
             <a class=\"alpha\" href=\"#\">F.A.Q.</a>
@@ -155,20 +148,13 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>Wild Séries</li>
-            <li class=\"fellow\"><a href=\"#\">Séries</a></li>
-            <li><a href=\"#\">Films</a></li>
-            <li><a href=\"#\">Nous contacter</a></li>
-        </ul>
-    </nav>
+    
     <section>
         <h2 class=\"fellow\">Hello Wilders !<br><span></h2>
     </section>
     <section class=\"mushroom\">
-        <article class=\"photo\"><a href=\"#\"></a>Séries</article>
-        <article class=\"photo\"><a href=\"#\"></a>Films</article>
+        <article class=\"photo\"><a href=\"series.html.twig\"></a>Séries</article>
+        <article class=\"photo\"><a href=\"films.html.twig\"></a>Films</article>
         <article class=\"photo\"><a href=\"#\"></a>Suggestion du jour</article>
     </section>
 
@@ -177,8 +163,8 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
     <footer>
         <section class=\"ledger\">
             <a class=\"alpha\" href=\"#\">A propos</a>
-            <a class=\"alpha\" href=\"#\">Séries</a>
-            <a class=\"alpha\" href=\"#\">Films</a>
+            <a class=\"alpha\" href=\"series.html.twig\">Séries</a>
+            <a class=\"alpha\" href=\"films.html.twig\">Films</a>
         </section>
         <section class=\"yellow\">
             <a class=\"alpha\" href=\"#\">F.A.Q.</a>

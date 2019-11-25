@@ -29,6 +29,8 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'stylesheets' => [$this, 'block_stylesheets'],
+            'serie' => [$this, 'block_serie'],
+            'film' => [$this, 'block_film'],
             'body' => [$this, 'block_body'],
             'javascripts' => [$this, 'block_javascripts'],
         ];
@@ -48,25 +50,35 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <link rel=\"stylesheet\" href=\"build/css/app.css\"> 
-        <script src=\"build/js/app.js\"></script>
         <title>";
-        // line 7
+        // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         ";
-        // line 8
+        // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
+        // line 7
         echo "    </head>
     <body>
-        ";
+        <header>
+            ";
+        // line 10
+        $this->loadTemplate("/wild/navbar.html.twig", "base.html.twig", 10)->display($context);
         // line 11
-        $this->displayBlock('body', $context, $blocks);
+        echo "        </header>
+        ";
         // line 12
+        $this->displayBlock('serie', $context, $blocks);
+        // line 13
+        echo "        ";
+        $this->displayBlock('film', $context, $blocks);
+        // line 14
+        echo "        ";
+        $this->displayBlock('body', $context, $blocks);
+        // line 15
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 13
+        // line 16
         echo "    </body>
 </html>
 ";
@@ -78,7 +90,7 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 
     }
 
-    // line 7
+    // line 5
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -97,7 +109,7 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 
     }
 
-    // line 8
+    // line 6
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -116,7 +128,43 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 
     }
 
-    // line 11
+    // line 12
+    public function block_serie($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "serie"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "serie"));
+
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 13
+    public function block_film($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "film"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "film"));
+
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 14
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -134,7 +182,7 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 
     }
 
-    // line 12
+    // line 15
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -158,9 +206,14 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  138 => 12,  120 => 11,  101 => 8,  82 => 7,  70 => 13,  67 => 12,  65 => 11,  61 => 9,  59 => 8,  55 => 7,  47 => 1,);
+        return array (  186 => 15,  168 => 14,  150 => 13,  132 => 12,  113 => 6,  94 => 5,  82 => 16,  79 => 15,  76 => 14,  73 => 13,  71 => 12,  68 => 11,  66 => 10,  61 => 7,  59 => 6,  55 => 5,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -169,12 +222,15 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <link rel=\"stylesheet\" href=\"build/css/app.css\"> 
-        <script src=\"build/js/app.js\"></script>
         <title>{% block title %}Wild Séries{% endblock %}</title>
         {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
     </head>
     <body>
+        <header>
+            {% include '/wild/navbar.html.twig' %}
+        </header>
+        {% block serie %}{% endblock %}
+        {% block film %}{% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
     </body>

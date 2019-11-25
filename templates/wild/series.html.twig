@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block serie %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Séries</title>
+</head>
+    <body>
+        <a href="{{ path('wild_serie', {'carotte':'ma-serie-preferee'}) }}">Ma série préférée</a>
+        <br>
+        <a href="{{ path('wild_serie', {'carotte':'star-wars-the-clones-wars'}) }}">Star Wars : The Clones Wars</a>
+        <h1>{{ carotte }}.</h1>
+    </body>
+</html>
+{% endblock %}

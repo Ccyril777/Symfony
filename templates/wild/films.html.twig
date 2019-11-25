@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block film %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Séries</title>
+</head>
+    <body>
+        <a href="{{ path('wild_film', {'navet':'Mon film préféré'}) }}">Mon film préféré</a>
+        <br>
+        <a href="{{ path('wild_film', {'navet':'Le Trône de Fer'}) }}">La Guerre des Etoiles - L'Empire contre-attaque</a>
+        <h1>{{ carotte }}.</h1>
+    </body>
+</html>
+{% endblock %}

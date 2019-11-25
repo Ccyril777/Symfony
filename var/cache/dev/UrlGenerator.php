@@ -17,5 +17,7 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'app_index' => [[], ['_controller' => 'App\\Controller\\DefautController::index'], [], [['text', '/']], [], []],
     'wild_index' => [[], ['_controller' => 'App\\Controller\\WildController::index'], [], [['text', '/wild']], [], []],
+    'wild_serie' => [['carotte'], ['carotte' => 'Aucune série sélectionnée, veuillez choisir une série', '_controller' => 'App\\Controller\\WildController::serie'], ['carotte' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'carotte', true], ['text', '/wild/serie']], [], []],
+    'wild_film' => [['navet'], ['navet' => 'Aucune film sélectionné, veuillez choisir un film', '_controller' => 'App\\Controller\\WildController::film'], ['navet' => '[a-z0-9-]+'], [['variable', '/', '[a-z0-9-]+', 'navet', true], ['text', '/wild/film']], [], []],
     'wild_show_index' => [[], ['_controller' => 'App\\Controller\\WildController::index'], [], [['text', '/wild/']], [], []],
 ];
