@@ -53,7 +53,7 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
         <title>";
         // line 5
         $this->displayBlock('title', $context, $blocks);
-        echo "</title>
+        echo "</title>   
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
@@ -222,7 +222,7 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <title>{% block title %}Wild Séries{% endblock %}</title>
+        <title>{% block title %}Wild Séries{% endblock %}</title>   
         {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
     </head>
     <body>

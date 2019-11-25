@@ -43,8 +43,8 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo "    <nav>
         <ul>
             <li>Wild Séries</li>
-            <li class=\"fellow\"><a href=\"series.html.twig\">Séries</a></li>
-            <li><a href=\"films.html.twig\">Films</a></li>
+            <li class=\"fellow\"><a href=\"\">Séries</a></li>
+            <li><a href=\"\">Films</a></li>
             <li><a href=\"#\">Nous contacter</a></li>
         </ul>
     </nav>
@@ -72,8 +72,8 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         return new Source("    <nav>
         <ul>
             <li>Wild Séries</li>
-            <li class=\"fellow\"><a href=\"series.html.twig\">Séries</a></li>
-            <li><a href=\"films.html.twig\">Films</a></li>
+            <li class=\"fellow\"><a href=\"\">Séries</a></li>
+            <li><a href=\"\">Films</a></li>
             <li><a href=\"#\">Nous contacter</a></li>
         </ul>
     </nav>
